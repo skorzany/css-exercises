@@ -46,3 +46,25 @@ html {
   color: white;
   text-align: left;
 }
+
+/* BELOW IS THE SOLUTION TO THIS EXERCISE */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  gap: 15px;
+}
+
+.header {
+  grid-column: 1 / 3;
+}
+
+.sidebar {
+  grid-column: 1;
+  grid-row: 2 / -2;
+}
+
+.footer {
+  grid-column: 1 / span 2;
+}
